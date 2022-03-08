@@ -5,8 +5,8 @@ ifndef::backend[:backend: html5]
 :revealjs_parallaxBackgroundImage: images/backround.png
 :icons: font
 
-[.lightbg,background-video="videos/background.MOV",background-video-loop="true",background-opacity="0.7"]
-= Leo-Iot
+[.lightbg,background-video="videos/background.mp4",background-video-loop="true",background-opacity="0.7"]
+= Leo-Iot test
 
 == Übersicht
 
