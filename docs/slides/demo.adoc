@@ -1,10 +1,12 @@
-= image:mqtt_1.png[Leo-Iot]
 ifndef::sourcedir[:sourcedir: ../src/main/java]
 ifndef::imagesdir[:imagesdir: images]
 ifndef::backend[:backend: html5]
 :revealjs_parallaxBackgroundSize: contain
 :revealjs_parallaxBackgroundImage: images/backround.png
 :icons: font
+
+[.lightbg,background-video="videos/background.MOV",background-video-loop="true",background-opacity="0.7"]
+= Leo-Iot
 
 == Übersicht
 
