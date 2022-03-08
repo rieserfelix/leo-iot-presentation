@@ -1,4 +1,92 @@
-= Index page
+= image:mqtt_1.png[indexmindex]
+ifndef::sourcedir[:sourcedir: ../src/main/java]
 ifndef::imagesdir[:imagesdir: images]
+ifndef::backend[:backend: html5]
+:revealjs_parallaxBackgroundSize: contain
+:revealjs_parallaxBackgroundImage: images/backround.png
+:icons: font
 
-image::img.png[]
+== Übersicht
+
+MQTT -> Message-Queue-Telemetry-Transport
+
+
+== Geschichte
+
+- 1999 von IBM entwickelt
+- Seit 2013 standardisiert als IoT-Protokoll
+
+=== Geschichte
+
+- Wird von einer Community weiter entwickelt
+- Aktuell in der Version 5
+
+== Eigenschaften
+
+- Es ist einfach zu implementieren
+- Leichtgewichtig
+
+=== Eigenschaften
+
+- Eine Verbindung zwischen Client/Server besteht ständig
+
+== EINSATZGEBIETE
+
+- Eigentlich überall da, wo Daten zwischen Geräten unterschiedlichster Bauart ausgetauscht werden sollen (M2M)
+- Auf ressourcenarmen Geräten (IoT, Esp, u.s.w.)
+- Sehr beliebt bei Hausautomatisierung
+
+== Sicherheit
+
+- Authentifizierung gegenüber Broker via User/Passwort einstellbar
+
+image::mqtt_3.png[mqtt,200,200]
+
+== Problem vor MQTT
+
+- Sibirien Ölpipelines
+- Daten (Öl Leck, Öl Menge, ..)
+- Datenverbindung in sibirischer Wüste sehr schlecht
+- Lösung: Etwas leichtgewichtiges für Daten von Pipeline -> MQTT
+- Geringe Datenmengen an Broker -> dieser schickt sie dann weiter
+
+== Wie funktioniert es
+
+- Publisher
+- Broker
+- Subscriber
+
+=== Publisher
+
+* Client (Temperatur-Sensor zum Bsp. Wohnzimmer)
+
+=== Broker
+
+* Server (Software)
+
+=== Subscriber
+
+* Client (Abonnenten)
+
+=== Gesamtsystem
+
+image:mqtt_2.png[]
+
+== Broker
+
+- Moquette
+- Mosquitto
+- MQTTRoute
+- Emqttd
+- HiveMQ
+- HBMQTT
+
+== Topic-Filter
+
+- Wildcard: Multi-Level Wildcard
+
+ sensors/sensor1/#
+    sensors/sensor1/temperature
+    sensors/sensor1/pressure
+    sensors/sensor1/humidity/in
+    sensors/sensor1/humitity/out
